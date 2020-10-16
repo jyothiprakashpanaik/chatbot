@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <category>
+    <pattern>*</pattern>
+    <template>Amm..I have no answer for that.</template>
+  </category>
+  
+  <category>
+      <pattern>im your master my name is *</pattern>
+      <template>Ok I will set my master name as <set name="name"><star/></set></template>
+  </category>
+  
+  <category>
+      <pattern>who is your master</pattern>
+      <template>my master is <get name="name"/></template>
+  </category>
+  
+  <category>
+      <pattern>hi</pattern>
+      <template>
+          <random>
+              <li>Hola Amigo</li>
+              <li>Namaste!</li>
+              <li>Hi there</li>
+              <li>Kusham Di</li>
+          </random>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>hola</pattern>
+      <template><srai>hi</srai></template>
+  </category>
+  
+  <category>
+      <pattern>im hungry</pattern>
+      <template>so ,which one do you prefer idle or dosa</template>
+  </category>
+  
+  <category>
+      <pattern>idle</pattern>
+      <that>so ,which one do you prefer idle or dosa</that>
+      <template>well ,idle is a good for health</template>
+  </category>
+  
+    <category>
+      <pattern>dosa</pattern>
+      <that>so ,which one do you prefer idle or dosa</that>
+      <template>well ,dosa is a good for health</template>
+  </category>
+  
+  <category>
+      <pattern>who are you</pattern>
+      <template>
+          well
+          <button>
+              <text>wanna know me?</text>
+              <postback>knowme</postback>
+          </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>knowme</pattern>
+      <template>I am bot..! The chrtbot from zomato</template>
+  </category>
+  
+  <category>
+      <pattern>openweb</pattern>
+      <template>
+          here!
+          <button>
+              <text>Our site</text>
+              <url>https://www.zomato.com/hyderabad/</url>
+          </button>
+      </template>
+  </category>
+  
+  <category>
+      <pattern>ratings</pattern>
+      <template>
+          you  want the ratings
+          <reply>
+              <text>idle</text>
+              <postback>idlereview</postback>
+          </reply>
+          
+          <reply>
+              <text>dosa</text>
+              <postback>dosareview</postback>
+          </reply>
+
+          
+          
+      </template>
+  </category>
+  
+  <category>
+      <pattern>idlereview</pattern>
+      <template>4.5 stars</template>
+  </category>
+  
+    <category>
+      <pattern>idlereview</pattern>
+      <template>4.5 stars</template>
+  </category>
+  
+  
+</aiml>
